@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Options Page :: Tab Reloader</title>
+  <style>
+    body {
+      padding: 10px;
+    }
+    textarea {
+      width: 100%;
+    }
+    input[type=number] {
+      width: 45px;
+    }
+  </style>
+</head>
+
+<body>
+  <table width=100%>
+    <tr>
+      <td><input type="checkbox" id="browserdata"></td>
+      <td><label>Automatically Clear all browse data</label></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <input type="number" placeholder="dd" id="clear_browser_data_dd" min="0">
+        <input type="number" placeholder="hh" id="clear_browser_data_hh" min="0" max="23">
+        <input type="number" placeholder="mm" id="clear_browser_data_mm" min="0" max="59">
+        <input type="number" placeholder="ss" id="clear_browser_data_ss" min="0" max="59">
+      </td>
+    </tr>
+  </table>
+
+  <div>
+    <button id="clear" title="Clear session restore (clear memory of reloading jobs)">Clear</button>
+    <button id="reset" title="Reset settings to the defaults">Reset</button>
+    <button id="save" title="Save settings">Save</button>
+    <span id="info"></span>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

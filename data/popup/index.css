@@ -1,0 +1,55 @@
+body {
+  padding: 5px;
+  margin: 0;
+  background-color: #fff;
+  width: 450px;
+  height: 100px;
+  overflow: hidden;
+}
+table, body, input {
+  font-size: 12px;
+  line-height: 1.42857;
+  color: #444;
+  background-color: #FFF;
+}
+
+table {
+  width: 100%;
+}
+
+h1 {
+  font-size: 100%;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+tr[mode=info] {
+  font-size: 80%;
+}
+
+.fancy {
+  position: relative;
+  line-height: 0.5;
+  text-align: center;
+  width: 100%;
+}
+.fancy b {
+  color: #444;
+  position: relative;
+  background-color: #fff;
+  z-index: 2;
+  padding: 0 5px;
+}
+.fancy:before {
+  border-top: dotted 1px #444;
+  content: ' ';
+  width: 100%;
+  display: block;
+
+  top: 3px;
+  position: absolute;
+  z-index: 1;
+}

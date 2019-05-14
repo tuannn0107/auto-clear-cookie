@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "cookie-clear",
+  "version": "1.0",
+
+  "description": "Auto clear cookie",
+  "homepage_url": "https://chuyenthienha.com/",
+
+  "permissions": [
+    "storage",
+    "contextMenus"
+  ],
+
+  "browser_action": {
+    "default_icon": "data/icons/48.png",
+    "default_title": "Cookie Cleaner",
+    "default_popup": "data/popup/index.html"
+  },
+
+  "icons": {
+    "16": "data/icons/16.png",
+    "32": "data/icons/32.png",
+    "48": "data/icons/48.png"
+  },
+  "options_ui": {
+    "page": "data/options/index.html",
+    "chrome_style": true
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "auto-clear-cookie@example.com"
+    }
+  }
+
+}
