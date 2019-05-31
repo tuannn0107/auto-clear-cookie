@@ -38,3 +38,4 @@ document.getElementById('save').addEventListener('click', () => {
 });
 
 document.getElementById('reset').addEventListener('click', () => chrome.storage.local.set(config, restore));
+
