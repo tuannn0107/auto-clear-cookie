@@ -16,8 +16,8 @@ chrome.runtime.onMessage.addListener(request => {
     const twoDigit = num => ('00' + num).substr(-2);
     if (request.method === 'updated-info') {
         const obj = request.data;
-        const {dd = 0, hh = 0, mm = 5, ss = 0} = obj.msg
-        msg = `${twoDigit(dd)} : ${twoDigit(hh)} : ${twoDigit(mm)} : ${twoDigit(ss)}`;
+        console.log(obj)
+        msg = `${twoDigit(obj.clear_browser_data_dd)} : ${twoDigit(obj.clear_browser_data_hh)} : ${twoDigit(obj.clear_browser_data_mm)} : ${twoDigit(obj.clear_browser_data_ss)}`;
         document.getElementById('message').textContent = msg;
     }
 });

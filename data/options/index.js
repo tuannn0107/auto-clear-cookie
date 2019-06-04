@@ -3,7 +3,7 @@
 var config = {
     'clear_browser_data_dd': 0,
     'clear_browser_data_hh': 0,
-    'clear_browser_data_mm': 10,
+    'clear_browser_data_mm': 15,
     'clear_browser_data_ss': 0,
 };
 
