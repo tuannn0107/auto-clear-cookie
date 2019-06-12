@@ -24,7 +24,6 @@
   },
   "background": {
     "scripts": [
-      "/lib/chrome/chrome.js",
       "/lib/common.js"
     ]
   },
